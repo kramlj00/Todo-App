@@ -21,12 +21,15 @@ export default function App() {
   } 
 
   const submitHandler = (text) => {
-    setTodos((prevTodos) => {
-      return [
-        { text: text, key:  Math.random().toString() }, // novi todo
-        ...prevTodos // dohvaća sve prethodne todos
-      ]
-    })
+
+    if(text.lenght > 0) {
+      setTodos((prevTodos) => {
+        return [
+          { text: text, key:  Math.random().toString() }, // novi todo
+          ...prevTodos // dohvaća sve prethodne todos
+        ]
+      })
+    }
   }
 
   return (
