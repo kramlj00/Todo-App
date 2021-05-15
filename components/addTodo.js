@@ -15,6 +15,7 @@ export default function AddTodo () {
                 placeholder='new todo'
                 onChangeText={changeHandler}
             />
+            <Button onPress={() => console.log(text)} title='add todo' color='coral'/>
         </View>
     )
 }
