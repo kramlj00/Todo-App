@@ -59,6 +59,7 @@ export default function App() {
   );
 }
 
+// bez flex prop u content i list ne bi se moglo scrollat do dna
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -66,8 +67,10 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: 40,
+    flex: 1
   },
   list: {
     marginTop: 20,
+    flex: 1
   }
 });
